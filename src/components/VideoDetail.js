@@ -6,7 +6,7 @@ class VideoDetail extends React.Component {
     const video = this.props.video;
 
   	if (!video) {
-  		return <div>Loading...</div>;
+  		return <div>Votable Youtube Playlists</div>;
   	}
   	const videoId = video.id.videoId;
 

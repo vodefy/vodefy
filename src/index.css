@@ -4,15 +4,15 @@ body {
   font-family: sans-serif;
   background-color: rgb(250, 250, 250);
 }
+*[data-flex-grow="1"] {
+  flex-grow: 1;
+}
 
 
 .c-app__header {
   height: 60px;
   background-color: white;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .c-app__main {
   height: calc(100vh - 60px);
@@ -28,11 +28,40 @@ body {
 }
 .c-app__leftSidebar {
   width: 400px;
+  overflow-y: auto;
 }
 .c-app__rightSidebar {
   width: 500px;
   overflow-y: auto;
 }
+
+.c-header {
+  height: 100%;
+  padding: 0 20px;
+}
+.c-header__main {
+  height: 100%;
+  display: flex;
+}
+.c-header__logo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+}
+.c-header__searchBar {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.c-logo {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 30px;
+  color: #069de2;
+}
+
 
 
 .c-searchBar {

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../App.css';
 import $ from 'jquery';
 import SearchBar from "./SearchBar";
+import Header from "./Header";
 import VideoDetail from "./VideoDetail";
 import HistoryList from "./HistoryList";
 
@@ -87,7 +88,7 @@ class App extends Component {
     return (
       <div className="c-app">
         <div className="c-app__header">
-          <SearchBar
+          <Header
             videoSearch={(term) => this.videoSearch(term)}
             onVideoSelect={this.selectVideo}
             videos={this.state.videos}
